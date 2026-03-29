@@ -1,0 +1,84 @@
+# Nature Machine Intelligence – matplotlib style
+# ================================================
+# Usage:  plt.style.use("path/to/nmi.mplstyle")
+#         or copy to ~/.config/matplotlib/stylelib/nmi.mplstyle
+#         then plt.style.use("nmi")
+
+# --- Figure ------------------------------------------------------------
+figure.facecolor:   white
+figure.edgecolor:   white
+figure.dpi:         150          # screen; savefig.dpi overrides for export
+figure.figsize:     7.08, 5.0   # 180 mm ≈ 7.08 in (full-width default)
+figure.constrained_layout.use: True
+
+savefig.dpi:        300          # Nature requirement ≥ 300
+savefig.bbox:       tight
+savefig.pad_inches: 0.05
+savefig.transparent: False
+
+# --- Font ---------------------------------------------------------------
+font.family:        sans-serif
+font.sans-serif:    Helvetica Neue, Helvetica, Arial, DejaVu Sans
+font.size:          7            # base size; Nature recommends 5–8 pt
+mathtext.default:   regular
+
+# --- Axes ---------------------------------------------------------------
+axes.facecolor:     white
+axes.edgecolor:     black
+axes.linewidth:     0.8
+axes.grid:          False
+axes.titlesize:     8
+axes.titleweight:   regular
+axes.titlepad:      6
+axes.labelsize:     7
+axes.labelpad:      4
+axes.labelweight:   regular
+axes.spines.top:    False
+axes.spines.right:  False
+axes.prop_cycle:    cycler('color', ['4a9c8f', '2d8e80', '1a7a70', '0d6660', '084c4a', '3b7dd8', '2b5daa', '1d3f7c'])
+
+# --- Ticks --------------------------------------------------------------
+xtick.direction:    out
+ytick.direction:    out
+xtick.major.size:   3.5
+ytick.major.size:   3.5
+xtick.minor.size:   2.0
+ytick.minor.size:   2.0
+xtick.major.width:  0.8
+ytick.major.width:  0.8
+xtick.minor.width:  0.6
+ytick.minor.width:  0.6
+xtick.labelsize:    6.5
+ytick.labelsize:    6.5
+xtick.major.pad:    3
+ytick.major.pad:    3
+xtick.minor.visible: False
+ytick.minor.visible: False
+
+# --- Lines & markers ----------------------------------------------------
+lines.linewidth:    1.5
+lines.markersize:   5
+lines.markeredgewidth: 0.0
+
+# --- Legend --------------------------------------------------------------
+legend.frameon:     False
+legend.fontsize:    6
+legend.handlelength: 1.5
+legend.handletextpad: 0.4
+legend.columnspacing: 1.0
+legend.labelspacing: 0.4
+
+# --- Error bars ---------------------------------------------------------
+errorbar.capsize:   2
+
+# --- Patches (bars, boxes, …) ------------------------------------------
+patch.linewidth:    0.8
+patch.edgecolor:    black
+patch.facecolor:    4a9c8f
+
+# --- Hatches ------------------------------------------------------------
+hatch.linewidth:    0.5
+
+# --- LaTeX (optional; disable if no TeX install) ------------------------
+# text.usetex:      True
+# text.latex.preamble: \usepackage{helvet}\renewcommand{\familydefault}{\sfdefault}
