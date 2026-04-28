@@ -4,7 +4,14 @@ Source code for experiments and figures described in the paper _Understanding an
 
 ## Repository structure
 
-The `src` folder contains source code responsible for data generation, data analysis, and plotting. In particular: - File `01_shallowrelu.py` is the entry point for the _Shallow ReLU network_ experiment described in Fig. 2. - File `02_attention.py` is the entry point for the _Single-Head SDPA_ experiment described in Fig. 3. - File `01_suppl_rank_matcomp.py` is the entry point for the _Low-rank matrix completion_ experiment described in Fig. 4. - File `03_spectral_sparse.py` is the entry point for the _Sparse spectral recovery_ experiment described in Fig. 5. - File `04_tv_regularization.py` is the entry point for the _Piecewise-constant signal recovery_ experiment described in Fig. 6. - File `00_redo_plots.py` is the entry point for the generation of paper plots from the data saved by individual experiments.
+The `src` folder contains source code responsible for data generation, data analysis, and plotting. In particular:
+
+- File `01_shallowrelu.py` is the entry point for the _Shallow ReLU network_ experiment described in Fig. 2.
+- File `02_attention.py` is the entry point for the _Single-Head SDPA_ experiment described in Fig. 3.
+- File `01_suppl_rank_matcomp.py` is the entry point for the _Low-rank matrix completion_ experiment described in Fig. 4.
+- File `03_spectral_sparse.py` is the entry point for the _Sparse spectral recovery_ experiment described in Fig. 5.
+- File `04_tv_regularization.py` is the entry point for the _Piecewise-constant signal recovery_ experiment described in Fig. 6.
+- File `00_redo_plots.py` is the entry point for the generation of paper plots from the data saved by individual experiments.
 
 The `saved` folder contains pre-generated [`safetensors`](https://huggingface.co/docs/safetensors/index) files in which the results of individual experiments are stored, allowing figure generation without running the actual set of experiments.
 
