@@ -21,7 +21,7 @@ repos:
           - id: python-check-blanket-noqa
           - id: python-use-type-annotations
     - repo: https://github.com/astral-sh/ruff-pre-commit
-      rev: v0.14.10
+      rev: v0.15.12
       hooks:
           - id: ruff-format
             types_or: [python, pyi]
