@@ -19,7 +19,7 @@ The `figures` folder contains PNG versions of the figures shown in the paper.
 
 ## System requirements
 
-The code has been developed for, and tested on, Linux systems. The only strict requirement for full reproduction is the availability of GLibC `>=v2.28` (required by of PyTorch), which can be assumed to be satisfied on any sufficiently recent and updated Linux distribution. In particular, the code was tested on ArchLinux `>=2026.03.01` and Rocky Linux `9.5` running on x86_64 processors.
+The code has been developed for, and tested on, Linux systems. The only strict requirement for full reproduction is the availability of GLibC `>=v2.28` (required by PyTorch), which can be assumed to be satisfied on any sufficiently recent and updated Linux distribution. In particular, the code was tested on ArchLinux `>=2026.03.01` and Rocky Linux `9.5` running on x86_64 processors.
 
 Specific software requirements are listed in file `pyproject.toml` and can be installed using [uv](https://docs.astral.sh/uv/) and a working Internet connection (see below for further instructions). In detail:
 
@@ -58,11 +58,11 @@ Install time will be strongly dependent on Internet connection speed. On reasona
 In order to reproduce the experiments contained in the paper, one should open a user shell within the `src` folder and then run with a suitable Python interpreter (e.g. the one prepared earlier) the script(s) for the experiment(s) of interest. E.g., for full reproduction, one can run:
 
 ```shell
-python -O 01_shallowrelu.py
-python -O 01_suppl_rank_matcomp.py
-python -O 02_attention.py
-python -O 03_spectral_sparse.py
-python -O 04_tv_regularization.py
+../.venv/bin/python -O 01_shallowrelu.py
+../.venv/bin/python -O 01_suppl_rank_matcomp.py
+../.venv/bin/python -O 02_attention.py
+../.venv/bin/python -O 03_spectral_sparse.py
+../.venv/bin/python -O 04_tv_regularization.py
 ```
 
 Each invoked script will generate algorithmically the data required by the experiment, train the associated models, and report relevant results (e.g. those reported in figure captions). Diagnostic plots, and data to re-generate them without running the full experiments, will also be generated and saved on disk.
