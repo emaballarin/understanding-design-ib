@@ -1,17 +1,17 @@
-# Understanding and inverse design of implicit bias in stochastic learning: a symmetry perspective
+# Understanding and inverse design of implicit bias in stochastic learning: a geometric perspective
 
-Source code for experiments and figures described in the paper _Understanding and inverse design of implicit bias in stochastic learning: a symmetry perspective_ (Aladrah et al., 2026).
+Source code for experiments and figures described in the paper _Understanding and inverse design of implicit bias in stochastic learning: a geometric perspective_ (Aladrah et al., 2026).
 
 ## Repository structure
 
 The `src` folder contains source code responsible for data generation, data analysis, and plotting. In particular:
 
-- File `01_shallowrelu.py` is the entry point for the _Shallow ReLU network_ experiment described in Fig. 2.
-- File `02_attention.py` is the entry point for the _Single-Head SDPA_ experiment described in Fig. 3.
-- File `01_suppl_rank_matcomp.py` is the entry point for the _Low-rank matrix completion_ experiment described in Fig. 4.
-- File `03_spectral_sparse.py` is the entry point for the _Sparse spectral recovery_ experiment described in Fig. 5.
-- File `04_tv_regularization.py` is the entry point for the _Piecewise-constant signal recovery_ experiment described in Fig. 6.
-- File `00_redo_plots.py` is the entry point for the generation of paper plots from the data saved by individual experiments.
+- File `01_shallowrelu.py` is the script to be run for the _Shallow ReLU network_ experiment described in Fig. 2.
+- File `02_attention.py` is the script to be run for the _Single-Head SDPA_ experiment described in Fig. 3.
+- File `01_suppl_rank_matcomp.py` is the script to be run for the _Low-rank matrix completion_ experiment described in Fig. 4.
+- File `03_spectral_sparse.py` is the script to be run for the _Sparse spectral recovery_ experiment described in Fig. 5.
+- File `04_tv_regularization.py` is the ecript to be run for the _Piecewise-constant signal recovery_ experiment described in Fig. 6.
+- File `00_redo_plots.py` is the script to be run for the generation of paper plots from the data saved by individual experiments.
 
 The `saved` folder contains pre-generated [`safetensors`](https://huggingface.co/docs/safetensors/index) files in which the results of individual experiments are stored, allowing figure generation without running the actual set of experiments.
 
@@ -55,7 +55,7 @@ Install time will be strongly dependent on Internet connection speed. On reasona
 
 ## Reproducibility instructions
 
-In order to reproduce the experiments contained in the paper, one should open a user shell within the `src` folder and then run with a suitable Python interpreter (e.g. the one prepared earlier) the entry point script(s) for the experiment(s) of interest. E.g., for full reproduction, one can run:
+In order to reproduce the experiments contained in the paper, one should open a user shell within the `src` folder and then run with a suitable Python interpreter (e.g. the one prepared earlier) the script(s) for the experiment(s) of interest. E.g., for full reproduction, one can run:
 
 ```shell
 python -O 01_shallowrelu.py
@@ -83,7 +83,7 @@ According to CPU capabilities, the expected runtime for the full experiment batt
 
 ```bibtex
 @misc{aladrah2026implicit,
-    title         = {Implicit bias as a Gauge correction: Theory and Inverse Design},
+    title         = {Understanding and inverse design of implicit bias in stochastic learning: a geometric perspective},
     author        = {Aladrah, Nicola and Ballarin, Emanuele and Biagetti, Matteo and Ansuini, Alessio and d'Onofrio, Alberto and Anselmi, Fabio},
     year          = {2026},
     eprint        = {2601.06597},
